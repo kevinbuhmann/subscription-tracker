@@ -1,0 +1,36 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist",
+    "sourceMap": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "target": "es5",
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "newLine": "LF",
+    "lib": [
+      "es6",
+      "es7",
+      "dom"
+    ],
+    "plugins": [
+      {
+        "name": "tslint-language-service",
+        "ignoreDefinitionFiles": true
+      }
+    ]
+  },
+  "include": [
+    "./src/index.ts",
+    "./src/tslint-rules/*.ts"
+  ],
+  "exclude": [
+    "*.spec.ts"
+  ]
+}

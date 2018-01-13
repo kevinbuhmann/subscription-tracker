@@ -1,0 +1,7 @@
+.git/
+src/
+coverage/
+
+tsconfig.json
+tslint.json
+yarn.lock

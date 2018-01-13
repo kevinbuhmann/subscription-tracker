@@ -1,0 +1,43 @@
+{
+  "name": "subscription-tracker",
+  "version": "0.1.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": "https://github.com/kevinphelps/subscription-tracker.git",
+  "author": "Kevin Phelps <KevinPhelps11@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "ts-node ./build/lint.ts",
+    "build": "ts-node ./build/build.ts",
+    "test": "ts-node ./build/test.ts",
+    "print-coverage": "istanbul report -t text",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "prepublishOnly": "yarn run build"
+  },
+  "peerDependencies": {
+    "@angular/core": "^5.0.0",
+    "rxjs": "^5.0.0",
+    "tslint": "^5.4.0",
+    "typescript": "^2.4.0"
+  },
+  "devDependencies": {
+    "@angular/core": "5.2.0",
+    "@types/jasmine": "2.8.3",
+    "@types/node": "8.5.2",
+    "@types/rimraf": "2.0.2",
+    "@types/yargs": "10.0.0",
+    "chalk": "2.3.0",
+    "codecov": "3.0.0",
+    "istanbul": "0.4.5",
+    "jasmine": "2.8.0",
+    "ncp": "2.0.0",
+    "remap-istanbul": "0.9.5",
+    "rimraf": "2.6.2",
+    "rxjs": "5.5.6",
+    "ts-node": "4.1.0",
+    "tslint": "5.8.0",
+    "tslint-consistent-codestyle": "1.11.0",
+    "typescript": "2.6.2",
+    "zone.js": "0.8.20"
+  }
+}
