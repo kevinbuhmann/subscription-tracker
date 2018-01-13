@@ -50,7 +50,7 @@ export class AppComponent extends BaseComponent implements OnInit {
 }
 ```
 
-3. Add the `no-subscribe` rule to your `tslint.json` configuration. This rulle will warn you if you
+3. Add the `no-subscribe` rule to your `tslint.json` configuration. This rule will warn you if you
 use `.subscribe(...)` instead of `.subscribeAndTrack(this, ...)`
 
 ```json
