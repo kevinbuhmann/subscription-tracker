@@ -1,7 +1,12 @@
 .git/
 src/
+build/
 coverage/
 
-tsconfig.json
-tslint.json
+.istanbul.yml
+.npmignore
+.travis.yml
+jasmine.json
+tsconfig.lint.json
+tslint.spec.json
 yarn.lock
